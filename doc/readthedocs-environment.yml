@@ -10,3 +10,5 @@ dependencies:
   - matplotlib
   - pandas
   - sphinxcontrib-bibtex
+  - pip:
+    - sphinx_rtd_theme
