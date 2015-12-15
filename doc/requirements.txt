@@ -5,3 +5,4 @@ numpy
 matplotlib
 pandas
 sphinxcontrib-bibtex
+cloud_sptheme
