@@ -5,3 +5,4 @@ numpy
 matplotlib
 pandas
 sphinxcontrib-bibtex
+sphinx-py3doc-enhanced-theme
