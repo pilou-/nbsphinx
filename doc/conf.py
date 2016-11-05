@@ -4,6 +4,8 @@
 # Use sphinx-quickstart to create your own conf.py file!
 # After that, you have to edit a few things.  See below.
 
+import guzzle_sphinx_theme
+
 # Select nbsphinx and, if needed, other Sphinx extensions:
 extensions = [
     'nbsphinx',
@@ -128,6 +130,23 @@ except Exception:
 # -- Options for HTML output ----------------------------------------------
 
 html_title = project + ' version ' + release
+# Adds an HTML table visitor to apply Bootstrap table classes
+html_translator_class = 'guzzle_sphinx_theme.HTMLTranslator'
+html_theme_path = guzzle_sphinx_theme.html_theme_path()
+html_theme = 'guzzle_sphinx_theme'
+
+# Register the theme as an extension to generate a sitemap.xml
+extensions.append('guzzle_sphinx_theme')
+
+html_theme_options = {
+    'project_nav_name': project,
+}
+html_sidebars = {
+    '**': ['logo-text.html', 'globaltoc.html', 'searchbox.html']
+}
+
+# More TOC levels in the sidebar:
+# https://github.com/guzzle/guzzle_sphinx_theme/issues/22
 
 # -- Options for LaTeX output ---------------------------------------------
 
