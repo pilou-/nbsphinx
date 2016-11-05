@@ -10,3 +10,5 @@ dependencies:
   - matplotlib
   - pandas
   - sphinxcontrib-bibtex
+  - pip:
+    - git+https://github.com/JuliaLang/JuliaDoc.git
