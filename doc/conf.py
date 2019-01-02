@@ -7,8 +7,9 @@
 # Select nbsphinx and, if needed, other Sphinx extensions:
 extensions = [
     'nbsphinx',
-    'sphinx.ext.mathjax',
-    'sphinxcontrib.bibtex',
+    'sphinx.ext.mathjax',  # for math equation
+    'sphinxcontrib.bibtex',  # for bibliographic references
+    'sphinxcontrib.rsvgconverter',  # for SVG->PDF conversion in LaTeX output
 ]
 
 # Exclude build directory and Jupyter backup files:
